@@ -33,7 +33,7 @@ const CompanyDetail = () => {
                         <h2>{company.name}</h2>
                         <p>{company.description}</p>
                         {company.jobs && company.jobs.map(job =>
-                                                            <JobCard key={uuid()} id={job.id}/>
+                                                            <JobCard key={uuid()} id={job.id} title={companyJobBoard}/>
                         )}
                     </div>}
             </>

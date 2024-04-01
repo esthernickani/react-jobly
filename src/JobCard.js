@@ -2,7 +2,7 @@ import { React, useState, useEffect, useContext } from "react";
 import UserContext from "./UserContext";
 import JoblyApi from "./api";
 
-const JobCard = ({title='companyJobs', id }) => {
+const JobCard = ({title, id }) => {
     const [ job, setJob ] = useState(null);
 
     const { currentUser, applyJob } = useContext(UserContext)
